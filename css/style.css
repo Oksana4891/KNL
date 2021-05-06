@@ -142,7 +142,7 @@ ul {
 
 .header_menu--item:hover .header_menu--link {
   color: #ffff;
-  background-image: url(../images/manuItemBg.png);
+  background-image: url('../images/manuItemBg.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -234,6 +234,7 @@ ul {
 .facebook {
   background-image: url(../images/icon/Facebook.svg);
   background-color: #3c5a98;
+
 }
 
 .twitter {
@@ -530,8 +531,8 @@ input {
   padding-top: 30px;
   padding-bottom: 50px;
   background-color: #fff;
-  /* position: relative; */
   bottom: 0;
+  z-index: 100;
 }
 
 .footer::before {
