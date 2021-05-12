@@ -64,6 +64,7 @@ a {
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
+  cursor: pointer;
 }
 
 a:hover,
@@ -82,6 +83,14 @@ ul {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
   width: 960px;
   margin: 0 auto;
   background-color: #fff;
@@ -250,6 +259,7 @@ ul {
 /* MAIN */
 
 .main {
+  flex-grow: 1;
   padding-top: 13px;
 }
 
