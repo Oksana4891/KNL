@@ -675,7 +675,8 @@ input {
 @media screen and (max-width: 980px) {
 
   .container {
-    width: 728px; 
+    width: 768px;
+    padding: 0px 20px; 
   }
  /* Header-mobile */
   .header::before {
