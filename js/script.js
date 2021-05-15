@@ -69,3 +69,25 @@ tabs.forEach((tab, i)=> {
     })
 });
 
+
+
+ //   Burger menu screen <= 980
+
+ const burger = document.querySelector('#burger');
+ const menu = document.querySelector('.js-mobile-menu');
+ 
+ burger.onclick = function () { 
+     menu.classList.toggle('is-open');
+ };
+
+
+//  Height Shedule block
+
+const leftBlock = document.querySelector('.js-main_left-block');
+const scheduleBlocks = document.querySelectorAll('.js-schedule');
+const leftBlockHeight = leftBlock.clientHeight;
+
+scheduleBlocks.forEach (block => block.style.height=`${leftBlockHeight-70}px`);
+
+
+

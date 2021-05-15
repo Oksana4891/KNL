@@ -24,30 +24,36 @@
             <h1>
                 <a href="index.html"><img class="header_logo" src="images/logo.png" alt="logo" /></a>
             </h1>
+            <div class="burger" id="burger">
+                <div class="burger_icon">
+                  <div class="burger-line"></div>
+                </div>
+                <div class="burger_title">Menu</div>
+                <ul class="header_mobile-menu js-mobile-menu">
+                    <li class="header_mobile-menu--item">
+                        <a class="header_mobile-menu--link" href="index.html">Home</a>
+                    </li>
+                    <li class="header_mobile-menu--item">
+                        <a class="header_mobile-menu--link" href="#"> About</a>
+                    </li>
+                    <li class="header_mobile-menu--item">
+                        <a class="header_mobile-menu--link" href="">Schedule</a>
+                    </li>
+                    <li class="header_mobile-menu--item">
+                        <a class="header_mobile-menu--link" href="#"> Programs</a>
+                    </li>
+                    <li class="header_mobile-menu--item">
+                        <a class="header_mobile-menu--link" href="#">Streaming</a>
+                    </li>
+                    <li class="header_mobile-menu--item">
+                        <a class="header_mobile-menu--link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
             <nav>
-                <ul class="header_menu">
+                <ul class="header_menu js-mobile-menu">
                     <li class="header_menu--item">
                         <a class="header_menu--link" href="index.html">Home</a>
-                        <ul class="header_submenu">
-                            <li class="header_submenu--item">
-                                <a href="#">Mission Statement</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Board & Staff</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">MEMBERS</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Sub NAv 1</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Sub NAv 2</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Sub NAv 3</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="header_menu--item">
                         <a class="header_menu--link" href="#"> About</a>
@@ -74,72 +80,13 @@
                     </li>
                     <li class="header_menu--item">
                         <a class="header_menu--link" href="">Schedule</a>
-                        <ul class="header_submenu">
-                            <li class="header_submenu--item">
-                                <a href="#">Mission Statement</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Board & Staff</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">MEMBERS</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Sub NAv 1</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Sub NAv 2</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Sub NAv 3</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="header_menu--item">
                         <a class="header_menu--link" href="#"> Programs</a>
-                        <ul class="header_submenu">
-                            <li class="header_submenu--item">
-                                <a href="#">Mission Statement</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Board & Staff</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">MEMBERS</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Sub NAv 1</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Sub NAv 2</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Sub NAv 3</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="header_menu--item">
                         <a class="header_menu--link" href="#">Streaming</a>
-                        <ul class="header_submenu">
-                            <li class="header_submenu--item">
-                                <a href="#">Mission Statement</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Board & Staff</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">MEMBERS</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Sub NAv 1</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Sub NAv 2</a>
-                            </li>
-                            <li class="header_submenu--item">
-                                <a href="#">Sub NAv 3</a>
-                            </li>
-                        </ul>
+
                     </li>
                 </ul>
             </nav>
@@ -156,8 +103,8 @@
             </ul>
         </header>
         <main class="main">
-            <div class="block_wrapper">
-                <div class="left-block">
+            <div class="block_wrapper main-block">
+                <div class="left-block js-main_left-block">
                     <div class="slider">
                         <!-- Swiper -->
                         <div class="swiper-container mainSwiper">
@@ -202,8 +149,8 @@
                             <div class="contact-form_input-title">
                                 Recipient <span>(required)</span>
                             </div>
-                            <select size="1" name="recipient" id="recipient" required multiple>
-                                <option disabled>Please select recipient...</option>
+                            <select size="1" name="recipient" id="recipient" required>
+                                <option>Please select recipient...</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -221,7 +168,7 @@
                     </div>
                 </div>
                 <div class="right-block">
-                    <section class="schedule">
+                    <section class="schedule ">
                         <div class="block_wrapper">
                             <h3 class="schedule_title">Today’s Schedule</h3>
                             <div class="schedule_bnt-info"> <a href="#">Viev All</a> </div>
@@ -231,7 +178,7 @@
                             <div class="schedule_tub tub2"></div>
                         </div>
                         <div class="schedule_tabcontent is-active tabcontent1">
-                            <ul class="schedule_tabcontent-list" data-simplebar id="Knl1-list">
+                            <ul class="schedule_tabcontent-list js-schedule" data-simplebar id="Knl1-list">
                                 <li class="schedule_tabcontent-item">
                                     <span class="schedule_tabcontent--time">7:00 AM</span>
                                     <span class="schedule_tabcontent--info">Hola Estudiantes!</span>
@@ -321,10 +268,34 @@
                                     <span class="schedule_tabcontent--time">17:30 AM</span>
                                     <span class="schedule_tabcontent--info">QTV ‘13-’14</span>
                                 </li>
+                                <li class="schedule_tabcontent-item">
+                                    <span class="schedule_tabcontent--time">18:00 AM</span>
+                                    <span class="schedule_tabcontent--info">Hola Estudiantes!</span>
+                                </li>
+                                <li class="schedule_tabcontent-item">
+                                    <span class="schedule_tabcontent--time">18:30 AM</span>
+                                    <span class="schedule_tabcontent--info">B.I.F. Learning English</span>
+                                </li>
+                                <li class="schedule_tabcontent-item">
+                                    <span class="schedule_tabcontent--time">19:00 AM</span>
+                                    <span class="schedule_tabcontent--info">College Planning with Ewan McGregor</span>
+                                </li>
+                                <li class="schedule_tabcontent-item">
+                                    <span class="schedule_tabcontent--time">19:30 AM</span>
+                                    <span class="schedule_tabcontent--info">Cafe LaSun</span>
+                                </li>
+                                <li class="schedule_tabcontent-item">
+                                    <span class="schedule_tabcontent--time">20:00 AM</span>
+                                    <span class="schedule_tabcontent--info">Reading Now</span>
+                                </li>
+                                <li class="schedule_tabcontent-item">
+                                    <span class="schedule_tabcontent--time">20:30 AM</span>
+                                    <span class="schedule_tabcontent--info">Fresh News</span>
+                                </li>
                             </ul>
                         </div>
                         <div class="schedule_tabcontent tabcontent2">
-                            <ul class="schedule_tabcontent-list" data-simplebar id="Knl2-list">
+                            <ul class="schedule_tabcontent-list js-schedule" data-simplebar id="Knl2-list">
                                 <li class="schedule_tabcontent-item">
                                     <span class="schedule_tabcontent--time">7:00 AM</span>
                                     <span class="schedule_tabcontent--info">Hola Estudiantes!</span>
@@ -442,7 +413,7 @@
                             </div>
                             <div class="footer_contact-tel">
                                 <a href="tel:+000000000">800-000-111 </a>
-                                <span>Contact Us</span>
+                                <a class="footer_contact-tel--link" href="tel:+000000000">Contact Us</a>
                             </div>
                         </div>
                     </div>
